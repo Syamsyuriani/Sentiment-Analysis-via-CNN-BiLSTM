@@ -102,9 +102,7 @@ from tensorflow import keras
 from kerastuner.tuners import BayesianOptimization
  
 def cnn_bilstm(hp):
- 
-    ### Arsitektur
- 
+
     #Input layer
     inputs = keras.layers.Input(shape=(seq_length,))
  
@@ -203,8 +201,8 @@ def cnn_bilstm(hp):
 tuner = BayesianOptimization(cnn_bilstm,
                              objective = 'val_accuracy', 
                              max_trials = 10,
-                             directory = 'Hasil',
-                             project_name = 'Sentimen_CNN-BiLSTM')
+                             directory = 'Result',
+                             project_name = 'Sentiment_CNN-BiLSTM')
  
 tuner.search(x_train, y_train, batch_size=32, epochs = 10, validation_data = (x_test, y_test))
  
