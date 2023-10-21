@@ -3,5 +3,3 @@ The Indonesian Ministry of Education and Culture devised a strategy of studying 
 
 This project contains a sentiment analysis of the Quipper edutech application review taken from the google play store. You can see the data in this [post](https://github.com/Syamsyuriani/Data-Scrapping). This project uses the CNN-BiLSTM method and produces a fairly high accuracy.
 This code includes dataset upload, preprocessing, tokenization and pad sequencing, hyperparameter tuning for the CNN-BiLSTM model using bayesian optimization, and predicting new data.
-
-You can see some details of this work in [this](https://github.com/Syamsyuriani/Sentiment-Analysis-via-CNN-BiLSTM/blob/main/Sentiment_Analysis_via_CNN_BiLSTM.ipynb) and [this](https://github.com/Syamsyuriani/Sentiment-Analysis-via-CNN-BiLSTM/blob/main/Sentiment%20Analysis%20on%20Startup%20Edutech.pdf) links.
